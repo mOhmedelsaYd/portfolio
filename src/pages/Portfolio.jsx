@@ -909,7 +909,7 @@ const Portfolio = () => {
                   <div>
                     <div className="text-gray-400 text-sm">Phone</div>
                     <div className="text-gray-200 font-medium">
-                      +20 123 456 7890
+                      +20 1222799210
                     </div>
                   </div>
                 </a>
