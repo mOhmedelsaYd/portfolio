@@ -21,6 +21,7 @@ import {
   Shield,
   Menu,
   X,
+  Download,
 } from "lucide-react";
 
 const Portfolio = () => {
@@ -71,52 +72,108 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Enterprise Analytics Platform",
+      title: "Scanalyze – AI-Powered Medical Diagnostics System",
       description:
-        "Comprehensive business intelligence solution with real-time data processing, advanced visualization, and automated reporting capabilities for Fortune 500 companies.",
-      tech: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL", "AWS"],
+        "Full-stack healthcare diagnostics platform with JWT-based authentication, role-based access control, and AI-assisted medical report generation using ResNet50 and MedGemma-4B models. Integrated bilingual medical chatbot powered by RAG and Apollo-7B with automated WhatsApp OTP verification and CI/CD pipeline on Azure.",
+      tech: [
+        "Node.js",
+        "Express.js",
+        "JWT",
+        "ResNet50",
+        "MedGemma-4B",
+        "Apollo-7B",
+        "Azure",
+        "WhatsApp API",
+        "RAG",
+        "CI/CD",
+      ],
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      category: "Enterprise Software",
-      year: "2024",
-      metrics: "1M+ daily users",
-      link: "#",
+        "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop",
+      category: "Healthcare AI",
+      year: "Jun 2025",
+      metrics: "Graduation Project",
+      link: "https://scanalyze-fcds.vercel.app/",
+      features: [
+        "Multi-role authentication system",
+        "AI-powered medical diagnostics",
+        "Bilingual chatbot integration",
+        "Real-time WhatsApp notifications",
+      ],
     },
     {
-      title: "3D Manufacturing Simulator",
+      title: "Patria – Restaurant Management System",
       description:
-        "Advanced WebGL-based simulation platform for industrial processes with physics-based modeling and real-time optimization algorithms.",
-      tech: ["Three.js", "WebGL", "React", "Python", "Docker", "Kubernetes"],
+        "Complete full-stack restaurant management solution with comprehensive CRUD operations for categories, products, subcategories, locations, and ingredients. Features advanced site-wide offers system and real-time order management with automated time calculation and status tracking.",
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JavaScript",
+        "REST APIs",
+      ],
       image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-      category: "3D Development",
-      year: "2024",
-      metrics: "50% efficiency gain",
-      link: "#",
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",
+      category: "Full Stack",
+      year: "2025",
+      metrics: "Live Production System",
+      link: "https://patria-demo.vercel.app/",
+      features: [
+        "Complete inventory management",
+        "Real-time order tracking",
+        "Site-wide promotions system",
+        "Multi-location support",
+      ],
     },
     {
-      title: "Financial Risk Assessment System",
+      title: "Wrdya – HR Management System",
       description:
-        "AI-powered risk management platform with machine learning models for portfolio optimization and regulatory compliance in financial markets.",
-      tech: ["Vue.js", "Python", "TensorFlow", "Redis", "MongoDB", "AWS"],
+        "Comprehensive HR system frontend featuring employee management dashboards, leave & attendance modules, and penalties tracking system. Built with focus on optimal user experience, form validations, and responsive design across all devices with seamless API integration.",
+      tech: [
+        "React.js",
+        "JavaScript",
+        "API Integration",
+        "UI/UX Design",
+        "Responsive Design",
+      ],
       image:
-        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop",
-      category: "FinTech",
-      year: "2023",
-      metrics: "$25B+ managed assets",
-      link: "#",
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+      category: "Frontend Development",
+      year: "2025",
+      metrics: "Live Production System",
+      link: "https://wrdya.vercel.app/",
+      features: [
+        "Employee management dashboard",
+        "Leave & attendance tracking",
+        "Penalties management system",
+        "Responsive cross-browser design",
+      ],
     },
     {
-      title: "IoT Monitoring Dashboard",
+      title: "E-commerce Platform with Admin Dashboard",
       description:
-        "Real-time industrial IoT platform with predictive maintenance, performance analytics, and automated alerting for manufacturing equipment.",
-      tech: ["React", "Node.js", "InfluxDB", "MQTT", "Grafana", "Docker"],
+        "Scalable e-commerce backend system featuring secure JWT authentication, Stripe payment integration, advanced product image upload using Multer and Sharp, comprehensive search functionality with filtering and pagination for enhanced user experience.",
+      tech: [
+        "Node.js",
+        "Express.js",
+        "JWT",
+        "Stripe",
+        "Multer",
+        "Sharp",
+        "REST APIs",
+      ],
       image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
-      category: "IoT Platform",
-      year: "2023",
-      metrics: "5,000+ devices",
-      link: "#",
+        "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=600&h=400&fit=crop",
+      category: "Backend Development",
+      year: "Jan 2025",
+      metrics: "Personal Project",
+      link: "https://github.com/mOhmedelsaYd/E-commerce",
+      features: [
+        "Secure payment processing",
+        "Advanced product management",
+        "Image optimization system",
+        "Advanced search & filtering",
+      ],
     },
   ];
 
@@ -124,98 +181,163 @@ const Portfolio = () => {
     {
       category: "Frontend Development",
       icon: Code,
-      level: 95,
-      technologies: ["React", "TypeScript", "Next.js", "Vue.js", "Angular"],
+      level: 88,
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+        "Responsive Design",
+      ],
       description:
-        "Building scalable, performant user interfaces and web applications.",
+        "Building modern, responsive user interfaces with React and contemporary JavaScript frameworks.",
+      projects: ["Wrdya HR System", "Patria Restaurant System"],
     },
     {
-      category: "3D Graphics & WebGL",
-      icon: Zap,
-      level: 92,
-      technologies: ["Three.js", "WebGL", "Babylon.js", "D3.js", "Canvas API"],
-      description:
-        "Creating immersive 3D experiences and complex data visualizations.",
-    },
-    {
-      category: "Backend Systems",
+      category: "Backend Development",
       icon: Database,
       level: 90,
-      technologies: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "JWT Authentication",
+        "MVC Architecture",
+        "API Integration",
+      ],
       description:
-        "Designing robust backend architectures and database systems.",
+        "Developing scalable backend services with secure authentication and clean architecture patterns.",
+      projects: ["Scanalyze AI Platform", "E-commerce Backend"],
     },
     {
-      category: "Cloud & DevOps",
+      category: "Database & Cloud",
       icon: Shield,
-      level: 88,
-      technologies: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"],
+      level: 82,
+      technologies: [
+        "MongoDB",
+        "PostgreSQL",
+        "MySQL",
+        "Mongoose",
+        "AWS",
+        "Azure",
+        "CI/CD",
+      ],
       description:
-        "Implementing cloud infrastructure and automated deployment pipelines.",
+        "Database design, optimization, and cloud deployment with automated CI/CD pipelines.",
+      projects: ["Azure Deployment Pipeline", "Database Optimization"],
+    },
+    {
+      category: "Specialized Technologies",
+      icon: Zap,
+      level: 85,
+      technologies: [
+        "AI Integration",
+        "Stripe Payments",
+        "WhatsApp API",
+        "Docker",
+        "Git",
+        "Unit Testing",
+      ],
+      description:
+        "Advanced integrations including AI models, payment systems, and modern development tools.",
+      projects: ["AI Medical Diagnostics", "Payment Integration"],
     },
   ];
 
   const experience = [
     {
-      title: "Senior Software Engineer",
-      company: "TechCorp Solutions",
-      period: "2022 - Present",
+      title: "Freelance Full Stack Developer",
+      company: "Self-Employed",
+      period: "2025 – Present",
+      location: "Remote",
       description:
-        "Lead development of enterprise applications serving millions of users. Architect scalable systems and mentor development teams across multiple product lines.",
+        "Working on diverse full-stack projects including restaurant management systems and HR platforms. Specializing in MERN stack development with focus on user experience optimization and scalable system architecture.",
       achievements: [
-        "Improved system performance by 70%",
-        "Led team of 12 engineers",
-        "Reduced deployment time by 80%",
+        "Built complete restaurant management system with real-time order tracking and inventory management",
+        "Developed comprehensive HR system frontend with advanced employee management capabilities",
+        "Successfully deployed multiple production applications with live user bases",
+        "Maintained clear client communication and delivered projects on time",
       ],
+      technologies: ["React.js", "Node.js", "Express", "MongoDB", "JavaScript"],
     },
     {
-      title: "Full Stack Developer",
-      company: "Innovation Labs",
-      period: "2020 - 2022",
+      title: "Backend Developer Intern",
+      company: "H2M Marketing Company",
+      period: "Mar 2024 – Jul 2024",
+      location: "Remote",
       description:
-        "Specialized in high-performance web applications and real-time data visualization systems. Developed custom solutions for industrial clients.",
+        "Contributed to custom application development for diverse business needs in a marketing technology environment. Focused on secure authentication systems, API performance optimization, and database management while collaborating in remote Agile teams.",
       achievements: [
-        "Built custom rendering engine",
-        "Increased user engagement by 150%",
-        "Delivered 15+ major projects",
+        "Enhanced system security by 20% through comprehensive JWT authentication and RBAC implementation",
+        "Improved API performance and system efficiency by 10% through strategic database query optimization",
+        "Gained hands-on experience with professional version control workflows and API testing methodologies",
+        "Successfully collaborated with distributed teams using Agile methodologies and modern communication tools",
       ],
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Solutions Group",
-      period: "2018 - 2020",
-      description:
-        "Focused on creating responsive user interfaces and interactive web experiences. Collaborated with design teams to implement pixel-perfect solutions.",
-      achievements: [
-        "Improved page load times by 60%",
-        "Built 20+ responsive websites",
-        "Mentored junior developers",
+      technologies: [
+        "Node.js",
+        "JWT",
+        "RBAC",
+        "Database Optimization",
+        "API Testing",
       ],
     },
   ];
 
+  const education = {
+    degree: "Bachelor of Computing and Data Science",
+    university: "Alexandria University",
+    location: "Alexandria, Egypt",
+    period: "2021-2025",
+    status: "Graduated",
+    relevantCoursework: [
+      "Data Structures & Algorithms",
+      "Database Management Systems",
+      "Software Engineering",
+      "Web Development",
+      "Object-Oriented Programming",
+      "Computer Networks",
+    ],
+  };
+
   const certifications = [
     {
-      name: "AWS Solutions Architect Professional",
-      issuer: "Amazon Web Services",
+      name: "Bachelor of Computing and Data Science",
+      issuer: "Alexandria University",
+      year: "2025",
+      type: "Degree",
+    },
+    {
+      name: "MERN Stack Development",
+      issuer: "Self-Taught & Professional Projects",
       year: "2024",
+      type: "Practical Experience",
     },
     {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      year: "2023",
+      name: "RESTful API Development",
+      issuer: "Professional Experience",
+      year: "2024",
+      type: "Industry Experience",
     },
     {
-      name: "Certified Kubernetes Administrator",
-      issuer: "CNCF",
-      year: "2023",
-    },
-    {
-      name: "MongoDB Certified Developer",
-      issuer: "MongoDB Inc.",
-      year: "2022",
+      name: "Cloud Computing & CI/CD",
+      issuer: "AWS/Azure Learning",
+      year: "2024",
+      type: "Technical Skills",
     },
   ];
+
+  const personalInfo = {
+    name: "Mohamed Elsayed Ahmed",
+    title: "MERN Stack Developer",
+    location: "Third Al Montazah, Alexandria, Egypt 21919",
+    phone: "+201222799210",
+    email: "mohamedelsaid3963@gmail.com",
+    linkedin: "https://www.linkedin.com/in/moelsayd3963/",
+    github: "https://github.com/mOhmedelsaYd",
+    summary:
+      "MERN Stack Developer with 1 year of experience building full-stack web applications. Skilled in creating responsive React interfaces, developing Node.js/Express backend services, and managing MongoDB databases. Experienced in secure authentication, performance optimization, and CI/CD deployment.",
+  };
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -223,6 +345,15 @@ const Portfolio = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
     setMobileMenuOpen(false);
+  };
+
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/mohamedElsayed_CV_16.pdf"; // File must be inside public/
+    link.download = "Mohamed_Elsayed_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -398,7 +529,7 @@ const Portfolio = () => {
                   <div className="w-full h-full border-2 sm:border-3 border-[#c2b086] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 shadow-2xl overflow-hidden relative group-hover:scale-[1.02] transition-transform duration-500">
                     <img
                       src={professionalImage}
-                      alt="Mohamed Elsayed - Software Engineer"
+                      alt="Mohamed Elsayed - MERN Stack Developer"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
@@ -416,23 +547,21 @@ const Portfolio = () => {
                 <div className="flex items-center justify-center lg:justify-start space-x-2 sm:space-x-3 mb-3 sm:mb-4">
                   <div className="w-1.5 sm:w-2 h-8 sm:h-12 bg-gradient-to-b from-[#c2b086] to-[#a39670] rounded-full" />
                   <span className="text-[#c2b086] font-medium text-base sm:text-lg tracking-wide">
-                    Software Engineer
+                    MERN Stack Developer
                   </span>
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                   <span className="block bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent font-light tracking-tight mb-1 sm:mb-2">
-                    Mohamed
+                    {personalInfo.name.split(" ")[0]}
                   </span>
                   <span className="block bg-gradient-to-r from-[#c2b086] via-[#d4c494] to-[#c2b086] bg-clip-text text-transparent font-extralight tracking-wider">
-                    Elsayed
+                    {personalInfo.name.split(" ")[1]}
                   </span>
                 </h1>
 
                 <p className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed font-light max-w-lg sm:max-w-2xl mx-auto lg:mx-0 px-2 sm:px-0">
-                  Crafting scalable software solutions with modern technologies,
-                  clean architecture, and exceptional user experiences that
-                  drive business success.
+                  {personalInfo.summary}
                 </p>
               </div>
 
@@ -440,7 +569,7 @@ const Portfolio = () => {
               <div className="grid grid-cols-2 gap-3 sm:gap-4 py-4 sm:py-6 max-w-sm sm:max-w-none mx-auto lg:mx-0">
                 <div className="text-center lg:text-left bg-gray-900/30 rounded-xl p-3 sm:p-4 border border-gray-800/50">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#c2b086] mb-1">
-                    6+
+                    1+
                   </div>
                   <div className="text-gray-500 text-xs sm:text-sm font-medium">
                     Years Experience
@@ -448,26 +577,26 @@ const Portfolio = () => {
                 </div>
                 <div className="text-center lg:text-left bg-gray-900/30 rounded-xl p-3 sm:p-4 border border-gray-800/50">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#c2b086] mb-1">
-                    100+
+                    {projects.length}
                   </div>
                   <div className="text-gray-500 text-xs sm:text-sm font-medium">
-                    Projects
+                    Major Projects
                   </div>
                 </div>
                 <div className="text-center lg:text-left bg-gray-900/30 rounded-xl p-3 sm:p-4 border border-gray-800/50">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#c2b086] mb-1">
-                    50+
+                    3
                   </div>
                   <div className="text-gray-500 text-xs sm:text-sm font-medium">
-                    Happy Clients
+                    Live Systems
                   </div>
                 </div>
                 <div className="text-center lg:text-left bg-gray-900/30 rounded-xl p-3 sm:p-4 border border-gray-800/50">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#c2b086] mb-1">
-                    24/7
+                    2025
                   </div>
                   <div className="text-gray-500 text-xs sm:text-sm font-medium">
-                    Support
+                    Graduate
                   </div>
                 </div>
               </div>
@@ -476,17 +605,17 @@ const Portfolio = () => {
               <div className="flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:flex-wrap items-center lg:items-start justify-center lg:justify-start gap-0 sm:gap-4 lg:gap-6 text-gray-500 text-xs sm:text-sm">
                 <div className="flex items-center space-x-2 bg-gray-900/20 rounded-lg px-3 py-2 border border-gray-800/30">
                   <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-[#c2b086]" />
-                  <span>Cairo, Egypt</span>
+                  <span>Alexandria, Egypt</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/20 rounded-lg px-3 py-2 border border-gray-800/30">
                   <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-[#c2b086]" />
                   <span className="text-xs sm:text-sm">
-                    mohamed@example.com
+                    {personalInfo.email}
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/20 rounded-lg px-3 py-2 border border-gray-800/30">
                   <Award className="w-3 h-3 sm:w-4 sm:h-4 text-[#c2b086]" />
-                  <span>AWS Certified</span>
+                  <span>Fresh Graduate</span>
                 </div>
               </div>
 
@@ -499,8 +628,12 @@ const Portfolio = () => {
                   <span>View Projects</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
-                <button className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#c2b086]/50 text-[#c2b086] font-semibold rounded-xl sm:rounded-2xl hover:border-[#c2b086] hover:bg-[#c2b086]/10 hover:shadow-xl transition-all duration-300 backdrop-blur-sm w-full sm:w-auto">
-                  Download CV
+                <button
+                  onClick={downloadCV}
+                  className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#c2b086]/50 text-[#c2b086] font-semibold rounded-xl sm:rounded-2xl hover:border-[#c2b086] hover:bg-[#c2b086]/10 hover:shadow-xl transition-all duration-300 backdrop-blur-sm w-full sm:w-auto flex items-center justify-center space-x-2"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Download CV</span>
                 </button>
               </div>
             </div>
@@ -531,27 +664,31 @@ const Portfolio = () => {
             <div className="space-y-6 sm:space-y-8">
               <div className="prose prose-lg prose-gray">
                 <p className="text-lg sm:text-xl text-gray-300 leading-relaxed font-light mb-4 sm:mb-6">
-                  As a passionate Software Engineer with over 6 years of
-                  experience, I specialize in building robust, scalable
-                  applications that solve complex business challenges.
+                  As a passionate MERN Stack Developer and recent graduate from
+                  Alexandria University with a degree in Computing and Data
+                  Science, I bring fresh perspectives and modern technical
+                  skills to full-stack development.
                 </p>
                 <p className="text-base sm:text-lg text-gray-400 leading-relaxed mb-4 sm:mb-6">
-                  My expertise spans full-stack development, cloud architecture,
-                  and modern web technologies. I have a proven track record of
-                  delivering high-quality solutions for clients ranging from
-                  startups to enterprise organizations.
+                  My expertise includes React.js, Node.js, Express, and MongoDB,
+                  with hands-on experience in secure authentication, API
+                  integration, and cloud deployment. I've successfully
+                  contributed to live production systems including restaurant
+                  management and HR platforms, delivering measurable
+                  improvements in performance and security.
                 </p>
                 <p className="text-base sm:text-lg text-gray-400 leading-relaxed mb-6 sm:mb-8">
-                  I'm passionate about clean code, system design, and leveraging
-                  the latest technologies to create efficient and maintainable
-                  software solutions.
+                  I'm passionate about clean code, scalable architecture, and
+                  leveraging cutting-edge technologies like AI integration to
+                  create efficient solutions that solve real business problems
+                  and drive meaningful impact.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-6 sm:gap-8">
                 <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-2xl sm:rounded-3xl border border-[#c2b086]/20 backdrop-blur-sm hover:border-[#c2b086]/40 transition-all duration-300">
                   <div className="text-2xl sm:text-4xl font-bold text-[#c2b086] mb-2 sm:mb-3">
-                    100+
+                    {projects.length}
                   </div>
                   <div className="text-gray-500 text-xs sm:text-sm font-medium">
                     Projects Completed
@@ -559,7 +696,7 @@ const Portfolio = () => {
                 </div>
                 <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-2xl sm:rounded-3xl border border-[#c2b086]/20 backdrop-blur-sm hover:border-[#c2b086]/40 transition-all duration-300">
                   <div className="text-2xl sm:text-4xl font-bold text-[#c2b086] mb-2 sm:mb-3">
-                    6+
+                    1+
                   </div>
                   <div className="text-gray-500 text-xs sm:text-sm font-medium">
                     Years Experience
@@ -570,44 +707,47 @@ const Portfolio = () => {
 
             <div className="relative">
               <div className="bg-gradient-to-br from-gray-900/90 via-gray-800/90 to-gray-900/90 rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-gray-700/50 transform hover:scale-105 transition-all duration-500 shadow-2xl backdrop-blur-sm">
-                <div className="grid grid-cols-2 gap-6 sm:gap-10 mb-8 sm:mb-10">
-                  <div className="text-center">
-                    <div className="text-3xl sm:text-5xl font-bold text-[#c2b086] mb-2 sm:mb-3">
-                      50+
+                <div className="mb-8 sm:mb-10">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-200 mb-6">
+                    Education
+                  </h3>
+                  <div className="bg-gray-800/30 rounded-xl p-4 border border-gray-700/30 mb-6">
+                    <div className="flex items-start justify-between mb-2">
+                      <h4 className="text-[#c2b086] font-semibold">
+                        {education.degree}
+                      </h4>
+                      <span className="text-[#c2b086] text-sm">
+                        {education.status}
+                      </span>
                     </div>
-                    <div className="text-gray-400 text-xs sm:text-sm">
-                      Happy Clients
-                    </div>
+                    <p className="text-gray-300 font-medium">
+                      {education.university}
+                    </p>
+                    <p className="text-gray-500 text-sm">
+                      {education.location} | {education.period}
+                    </p>
                   </div>
-                  <div className="text-center">
-                    <div className="text-3xl sm:text-5xl font-bold text-[#c2b086] mb-2 sm:mb-3">
-                      99%
-                    </div>
-                    <div className="text-gray-400 text-xs sm:text-sm">
-                      Success Rate
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl sm:text-5xl font-bold text-[#c2b086] mb-2 sm:mb-3">
-                      30+
-                    </div>
-                    <div className="text-gray-400 text-xs sm:text-sm">
-                      Technologies
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl sm:text-5xl font-bold text-[#c2b086] mb-2 sm:mb-3">
-                      24/7
-                    </div>
-                    <div className="text-gray-400 text-xs sm:text-sm">
-                      Support
+
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-300 mb-3">
+                      Relevant Coursework:
+                    </h5>
+                    <div className="flex flex-wrap gap-2">
+                      {education.relevantCoursework.map((course, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-gray-800/50 text-gray-400 text-xs rounded-full border border-gray-700/30"
+                        >
+                          {course}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
 
                 <div className="border-t border-gray-700/50 pt-6 sm:pt-8">
                   <h4 className="text-base sm:text-lg font-semibold text-gray-200 mb-4 sm:mb-6">
-                    Certifications
+                    Professional Development
                   </h4>
                   <div className="space-y-3">
                     {certifications.map((cert, index) => (
@@ -623,8 +763,13 @@ const Portfolio = () => {
                             {cert.issuer}
                           </div>
                         </div>
-                        <div className="text-[#c2b086] text-xs">
-                          {cert.year}
+                        <div className="text-right">
+                          <div className="text-[#c2b086] text-xs">
+                            {cert.year}
+                          </div>
+                          <div className="text-gray-500 text-xs">
+                            {cert.type}
+                          </div>
                         </div>
                       </div>
                     ))}
@@ -670,6 +815,9 @@ const Portfolio = () => {
                       <span className="text-gray-400 font-medium text-sm sm:text-base">
                         {exp.period}
                       </span>
+                      <span className="text-gray-500 text-sm">
+                        • {exp.location}
+                      </span>
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-200 mb-2 sm:mb-3 group-hover:text-white transition-colors duration-300">
                       {exp.title}
@@ -681,21 +829,37 @@ const Portfolio = () => {
                       {exp.description}
                     </p>
 
-                    <div className="space-y-2">
+                    <div className="space-y-2 mb-6">
                       <h5 className="text-sm font-semibold text-gray-300 mb-2 sm:mb-3">
                         Key Achievements:
                       </h5>
                       {exp.achievements.map((achievement, achIndex) => (
                         <div
                           key={achIndex}
-                          className="flex items-center space-x-2"
+                          className="flex items-start space-x-2"
                         >
-                          <div className="w-1.5 h-1.5 bg-[#c2b086] rounded-full"></div>
+                          <div className="w-1.5 h-1.5 bg-[#c2b086] rounded-full mt-2 flex-shrink-0"></div>
                           <span className="text-gray-400 text-xs sm:text-sm font-light">
                             {achievement}
                           </span>
                         </div>
                       ))}
+                    </div>
+
+                    <div>
+                      <h5 className="text-sm font-semibold text-gray-300 mb-3">
+                        Technologies Used:
+                      </h5>
+                      <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-3 py-1 bg-gray-800/50 text-gray-400 text-xs rounded-full border border-gray-700/30"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -747,9 +911,28 @@ const Portfolio = () => {
                 </div>
 
                 <div className="p-6 sm:p-8">
-                  <p className="text-gray-400 mb-6 leading-relaxed font-light text-sm sm:text-base">
+                  <p className="text-gray-400 mb-4 leading-relaxed font-light text-sm sm:text-base">
                     {project.description}
                   </p>
+
+                  <div className="mb-4">
+                    <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                      Key Features:
+                    </h4>
+                    <div className="space-y-1">
+                      {project.features.map((feature, featureIndex) => (
+                        <div
+                          key={featureIndex}
+                          className="flex items-center space-x-2"
+                        >
+                          <div className="w-1 h-1 bg-[#c2b086] rounded-full"></div>
+                          <span className="text-gray-400 text-xs">
+                            {feature}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
                   <div className="mb-6">
                     <h4 className="text-sm font-semibold text-gray-300 mb-3">
@@ -773,6 +956,8 @@ const Portfolio = () => {
                     </span>
                     <a
                       href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-[#c2b086] hover:text-white transition-colors duration-300 group/view"
                     >
                       <span className="text-sm font-medium">View Project</span>
@@ -835,7 +1020,7 @@ const Portfolio = () => {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="mb-4">
                     <h4 className="text-sm font-semibold text-gray-300 mb-3">
                       Technologies:
                     </h4>
@@ -847,6 +1032,25 @@ const Portfolio = () => {
                         >
                           {tech}
                         </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                      Applied In:
+                    </h4>
+                    <div className="space-y-1">
+                      {skill.projects.map((project, projectIndex) => (
+                        <div
+                          key={projectIndex}
+                          className="flex items-center space-x-2"
+                        >
+                          <div className="w-1 h-1 bg-[#c2b086] rounded-full"></div>
+                          <span className="text-gray-400 text-xs">
+                            {project}
+                          </span>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -876,40 +1080,49 @@ const Portfolio = () => {
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-200 mb-6">
                   Let's Work Together
                 </h3>
-                <p className="text-gray-400 leading-relaxed font-light text-lg">
-                  I'm always interested in new opportunities and challenging
-                  projects. Let's discuss how we can work together to bring your
-                  ideas to life.
+                <p className="text-gray-400 leading-relaxed font-light text-lg mb-4">
+                  I'm actively seeking new opportunities and challenging
+                  projects. As a fresh graduate with hands-on experience, I'm
+                  excited to contribute to innovative teams and grow alongside
+                  experienced professionals.
+                </p>
+                <p className="text-gray-400 leading-relaxed font-light">
+                  Let's discuss how I can bring value to your projects with my
+                  MERN stack expertise and passion for clean, efficient code.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <a
-                  href="mailto:mohamed@example.com"
+                  href={`mailto:${personalInfo.email}`}
                   className="flex items-center space-x-4 p-4 bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-xl border border-gray-700/50 hover:border-[#c2b086]/30 transition-all duration-300"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-[#c2b086] to-[#a39670] rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-black" />
                   </div>
                   <div>
-                    <div className="text-gray-400 text-sm">Email</div>
+                    <div className="text-gray-400 text-start text-sm">
+                      Email
+                    </div>
                     <div className="text-gray-200 font-medium">
-                      mohamed@example.com
+                      {personalInfo.email}
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+201234567890"
+                  href={`tel:${personalInfo.phone}`}
                   className="flex items-center space-x-4 p-4 bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-xl border border-gray-700/50 hover:border-[#c2b086]/30 transition-all duration-300"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-[#c2b086] to-[#a39670] rounded-lg flex items-center justify-center">
                     <Phone className="w-6 h-6 text-black" />
                   </div>
                   <div>
-                    <div className="text-gray-400 text-sm">Phone</div>
+                    <div className="text-gray-400 text-start text-sm">
+                      Phone
+                    </div>
                     <div className="text-gray-200 font-medium">
-                      +20 1222799210
+                      {personalInfo.phone}
                     </div>
                   </div>
                 </a>
@@ -919,9 +1132,11 @@ const Portfolio = () => {
                     <MapPin className="w-6 h-6 text-black" />
                   </div>
                   <div>
-                    <div className="text-gray-400 text-sm">Location</div>
+                    <div className="text-gray-400 text-start text-sm">
+                      Location
+                    </div>
                     <div className="text-gray-200 font-medium">
-                      Cairo, Egypt
+                      Alexandria, Egypt
                     </div>
                   </div>
                 </div>
@@ -929,7 +1144,7 @@ const Portfolio = () => {
 
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href={personalInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-br from-gray-900/80 to-gray-800/80 border border-gray-700/50 rounded-xl flex items-center justify-center hover:border-[#c2b086]/30 hover:scale-105 transition-all duration-300"
@@ -937,7 +1152,7 @@ const Portfolio = () => {
                   <Github className="w-6 h-6 text-gray-400 hover:text-[#c2b086] transition-colors duration-300" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-br from-gray-900/80 to-gray-800/80 border border-gray-700/50 rounded-xl flex items-center justify-center hover:border-[#c2b086]/30 hover:scale-105 transition-all duration-300"
@@ -961,7 +1176,7 @@ const Portfolio = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-400 text-sm font-medium mb-2">
+                    <label className="block  text-gray-400 text-sm font-medium mb-2">
                       Email
                     </label>
                     <input
@@ -1016,12 +1231,13 @@ const Portfolio = () => {
                 <span className="text-black font-bold text-xs">ME</span>
               </div>
               <div className="text-lg font-semibold bg-gradient-to-r from-gray-200 to-[#c2b086] bg-clip-text text-transparent">
-                Mohamed Elsayed
+                {personalInfo.name}
               </div>
             </div>
 
             <p className="text-gray-500 text-sm mb-8">
-              Crafting exceptional digital experiences with modern technologies
+              MERN Stack Developer crafting modern web applications with passion
+              and precision
             </p>
 
             <div className="flex items-center justify-center space-x-6 mb-8 flex-wrap gap-4">
@@ -1049,7 +1265,7 @@ const Portfolio = () => {
 
             <div className="flex items-center justify-center space-x-4 mb-8">
               <a
-                href="https://github.com"
+                href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#c2b086] transition-colors duration-300"
@@ -1057,7 +1273,7 @@ const Portfolio = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#c2b086] transition-colors duration-300"
@@ -1065,7 +1281,7 @@ const Portfolio = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:mohamed@example.com"
+                href={`mailto:${personalInfo.email}`}
                 className="text-gray-500 hover:text-[#c2b086] transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
@@ -1074,7 +1290,7 @@ const Portfolio = () => {
 
             <div className="mt-8 pt-8 border-t border-gray-800/30">
               <p className="text-gray-600 text-xs">
-                © {new Date().getFullYear()} Mohamed Elsayed. All rights
+                © {new Date().getFullYear()} {personalInfo.name}. All rights
                 reserved.
               </p>
             </div>
